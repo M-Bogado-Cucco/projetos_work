@@ -2,5 +2,96 @@
 Anotações da semana COD3R-you tube, onde desenvolve um projeto FullStack com agentes de IA
 
 Aula 04 - Domínio e Repositório
-Normalmente compra um dómínio na GoDaddy, na aula comprou um domínio por 17,34
+Normalmente compra um domínio na GoDaddy, na aula comprou um domínio por 17,34
 comprei o meu por 17,16 (1º ano), após 80,31
+
+Aula 07 - Core
+cria a pasta core ( npm init -y )
+cria o arquivo .prettierrc  na raiz do projeto e coloca as configurações:
+
+{
+  "printWidth": 100,
+  "tabWidth": 4,
+  "useTabs": true,
+  "semi": true,
+  "singleQuote": false
+}
+
+Aula 08 - Backend
+
+Usará o nest no back
+npm i -g @nestjs/cli
+
+comandos úteis: nest --help
+nest new api-portfolio
+
+rodar a api:  saída na porta 3000
+npm run start
+npm run start:dev
+
+nest start --help
+package.json
+"start": "nest start --entryFile api-portfolio/src/main.js",
+"start:dev": "nest start --watch --entryFile api-portfolio/src/main.js",
+
+
+Aula 09 - Banco de Dados
+18/03
+usando supabase, pediu para gerar a senha automaticamnte, fiz o mesmo
+minha senha gerada: jmwvUamAOYvfeq8f
+
+
+Aula 10 - Prisma
+prisma.io
+Products > orm > quickstart
+
+npm install prisma --save-dev
+
+------------------------------------------
+npx prisma init
+
+saída do terminal:
+Next steps:
+1. Set the DATABASE_URL in the .env file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
+2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
+3. Run prisma db pull to turn your database schema into a Prisma schema.
+4. Run prisma generate to generate the Prisma Client. You can then start querying your database.
+5. Tip: Explore how you can extend the ORM with scalable connection pooling, global caching, and real-time database events. Read: https://pris.ly/cli/beyond-orm
+
+More information in our documentation:
+https://pris.ly/d/getting-starte
+-----------------------------------------------
+
+- ele comentou que usará o postgresql, pois o supabase é baseado no postgre sql
+npx prisma init --datasource-provider sqlite
+npx prisma init --datasource-provider sqlite
+
+ao clicar em connect no supabase:
+aba ORM:  tem as variáveis do .env.local
+copiar e colar no código, no arquivo .env
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
