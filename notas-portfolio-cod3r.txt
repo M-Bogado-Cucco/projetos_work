@@ -38,7 +38,7 @@ package.json
 Aula 09 - Banco de Dados
 18/03
 usando supabase, pediu para gerar a senha automaticamnte, fiz o mesmo
-minha senha gerada: jmwvUamAOYvfeq8f
+minha senha gerada: 88BbeKxeyVbBjtYX
 
 
 Aula 10 - Prisma
@@ -64,13 +64,36 @@ https://pris.ly/d/getting-starte
 
 - ele comentou que usará o postgresql, pois o supabase é baseado no postgre sql
 npx prisma init --datasource-provider sqlite
-npx prisma init --datasource-provider sqlite
+npx prisma init --datasource-provider pos
 
 ao clicar em connect no supabase:
 aba ORM:  tem as variáveis do .env.local
 copiar e colar no código, no arquivo .env
 
 
+Aula 11 - Tabela de Tecnologias
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Tecnologia {
+  id        Int @id @default(autoincrement())
+  nome      String
+  descricao String
+  imagem    String
+  destaque  Boolean @default(false)
+
+  @@map("tecnologias")
+}
+
+npx prisma migrate dev (deve ser efetuado a cada mudança no BD)
 
 
 
