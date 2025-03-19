@@ -93,7 +93,7 @@ model Tecnologia {
   @@map("tecnologias")
 }
 
-npx prisma migrate dev (deve ser efetuado a cada mudança no BD)
+npx prisma migrate dev (deve ser efetuado esse comando a cada mudança no BD)
 
 
 
