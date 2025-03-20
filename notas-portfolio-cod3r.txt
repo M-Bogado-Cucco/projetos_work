@@ -111,6 +111,28 @@ criei a conta no n8n
 Account name: bogado.app.n8n.cloud  (14 dias de acesso free)
 
 
+==================== Backend =============================  20/03/25
+
+Aula 20. Tabela de projetos
+
+model Projeto {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  descricao   String
+  imagens     String[]
+  nivel       Int
+  tipo        String
+  destaque    Boolean  @default(false)
+  repositorio String
+
+  tecnologias Tecnologia[]
+
+  @@map("projetos")
+}
+
+npx prisma migrate dev
+
+
 
 
 
