@@ -97,6 +97,19 @@ npx prisma migrate dev (deve ser efetuado esse comando a cada mudança no BD)
 
 
 
+Aula 12 - Popular a tabela de tecnologias
+projeto  com o repositório exemplo: portfolio-projetos-dev (https://github.com/portfolio-projetos-dev)
+
+4' 
+importa os dados (arquivo csv) no supabase(na prática são as colunas da tabela tecnologias)  
+
+
+Aula 13 - Criando conta n8n
+n8n.io
+
+criei a conta no n8n
+Account name: bogado.app.n8n.cloud  (14 dias de acesso free)
+
 
 
 
