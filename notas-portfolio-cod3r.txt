@@ -1,6 +1,8 @@
 17/03/25
 Anotações da semana COD3R-you tube, onde desenvolve um projeto FullStack com agentes de IA
 
+https://github.com/portfolio-projetos-dev/portfoleo
+
 Aula 04 - Domínio e Repositório
 Normalmente compra um domínio na GoDaddy, na aula comprou um domínio por 17,34
 comprei o meu por 17,16 (1º ano), após 80,31
@@ -131,6 +133,116 @@ model Projeto {
 }
 
 npx prisma migrate dev
+
+
+Aula 23. Classe is
+
+6'
+aqui eu não precisei colocar, pois já funcionou
+
+usar o console.log para testar o código ts no terminal
+cria a pasta .vscode e dentro dela o arquivo settings.json, onde deixa somente a linha:
+
+digita  code-runner.executorMap   (vai abrir várias opções, escolhe essa abaixo)
+{
+  "typescript": "npx tsx",  
+}
+
+-----------------------  22/03/25 ----------------------
+
+Aula 28. Criando Módulos
+excluiu alguns arquivos do projeto (app.service.ts, .prettierrc)
+
+7' em backend
+nest g  module db
+
+
+Aula 29. Configurando Prisma
+
+dentro da pasta api-portfolio/src/db:
+
+comando:
+nest g pr prisma.provider --no-spec --flat 
+
+pr = abreviação de provider
+prisma.provider = é o nome
+--no-spec = para não criar o arquivo de teste
+--flat = não cria uma subpasta
+
+
+Aula 30. API Tecnologia
+cria o controller, dentro da pasta api-portfolio/src/tecnologia:
+nest g co tecnologia --no-spec --flat
+
+8'
+nest g pr tecnologia.provider --no-spec --flat
+
+
+Aula 31. API do Projeto
+nest g pr projeto.provider --no-spec --flat
+nest g co projeto --no-spec --flat 
+
+
+Aula 33. n8n supabase 
+nessa aula, cria  a conexão com o supabase
+ cica no + > Credential > Personal
+
+poderia escolher tanto 'postgresql' quanto 'supabase api'
+escolheu 'supabase api'
+
+vai no supabase > connect > App Framework
+pega a url e a chave key e cola no n8n
+
+agora pode criar um novo work flow para o agente de ia responder através da base de dados
+
+
+=============  Módulo 03 - Deploy & Agente de IA ===============
+
+Aula 37. Fluxo de Teste com n8n
+
+loguei com o google em
+https://platform.openai.com/api-keys
+
+16'
+Adiciona a memória ao modelo de IA, faz isso através od 'session Id'
+
+Aula 38. Assistente pessoal
+4'
+prompt para o agente de IA:
+
+Você é o assistente pessoal dentro do portfólio do dev Bogado. Estou aberto para trabalho e contratação por empresas. É possível acessar todos os projetos do portfólio pela tool Projetos e todas as tecnologias que eu tenho experiência pela tool Tecnologias. Caso você não conheça a resposta, pode solicitar o telefone com whatsapp para que o Leonardo entre em contato posteriormente. Perguntas não relacinadas ao escopo do trabalho (projetos e tecnologias), podem ser educadamente negadas, caso queira poderá usar humor nessas negativas.
+
+11'
+respond to webhook
+
+13' 20
+coloca o fluxo como active
+retira da url de teste e coloca na de produção (agora não precisa mais ficar pedindo para 'escutar')
+
+
+Aula 39. Criando conta Fly.io
+
+comentou rapidamente sobre o fly.io , cuso de 6,5 dólares mensais
+
+aqui usará o fly.io
+entreicom a conta bogado.dev
+
+instalar as ferramentas:
+https://fly.io/docs/flyctl/install/
+
+curl -L https://fly.io/install.sh | sh
+
+comando que mostra a ajuda:
+/home/marcelobc/.fly/bin/flyctl --help
+
+teste de start da app, após criar o arquivo Dockerfile
+/home/marcelobc/.fly/bin/flyctl launch --no-deploy
+
+
+escolhe y, pois do contrário iria criar um novo BD, mas já temos o BD na aplicação
+
+
+Aula 41. Preparando o Deploy
 
 
 
