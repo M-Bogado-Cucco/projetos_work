@@ -1,4 +1,4 @@
-import Tecnologia from "../tecnologias/Tecnologia";
+import Tecnologia from "../tecnologia/Tecnologia";
 import { Nivel } from "./Nivel";
 import { Tipo } from "./Tipo";
 

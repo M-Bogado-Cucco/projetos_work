@@ -6,6 +6,8 @@ https://github.com/portfolio-projetos-dev/portfoleo
 Aula 04 - Domínio e Repositório
 Normalmente compra um domínio na GoDaddy, na aula comprou um domínio por 17,34
 comprei o meu por 17,16 (1º ano), após 80,31
+meu nome de usuario: bogado.dev
+
 
 Aula 07 - Core
 cria a pasta core ( npm init -y )
@@ -243,6 +245,96 @@ escolhe y, pois do contrário iria criar um novo BD, mas já temos o BD na aplic
 
 
 Aula 41. Preparando o Deploy
+
+na aplicação do fly.io, clica em Secrets (menu lateral), ali que que irá linkar com as variáveis do arquivo .env.sample do projeto ( DATABASE_URL=   DIRECT_URL= )
+
+=================  23-03-25  ========================
+
+Aula 42. Deploy-Fly.io
+comando para fazer o deploy do back no fly.io:
+fly deploy
+
+tive que usar o comando: /home/marcelobc/.fly/bin/fly deploy
+
+
+Aula 44. Configurando DNS #01
+na aba certificates, acrescenta uma url (pega a do godaddy)
+
+em godaddy foi em : https://dcc.godaddy.com/control/portfolio/projetos.work/settings?ventureId=d61c04ce-134f-4fbd-ab6d-131b536667c5&homecoming=true&referrer=vh-quicklink&itc=mya_vh_buildwebsite_dashboard
+
+no certificates, coloca o endereço: api.projetos.work
+pega o cname do fly.io e coloca no godaddy(adiciona um registro), coloca a chave e o valor
+
+tipo: cname      Nome: chave     Valor: valor
+
+Adiciona mais 2 registros, tipo A e tipo AAAA
+
+
+
+-------------->>>  Módulo Frontend
+Aula 47. Criação do frontend
+
+na raiz do projeto:
+npx create-next-app frontend
+
+npm init -y  (para que com 1 único comando rode o front e o back, pois esse comando cria o package.json)
+
+
+Aula 60
+Mexe no arquivo next.config.ts
+images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "**",
+			},
+		],
+	},
+	
+	
+Aula 61. Carousel(shadcn)
+Mostra um site interessante de componentes:
+ui.aceternity.com	
+
+Mas usará o shadcn
+na pasta frontend:
+npx shadcn@latest init
+escolheu a cor Zinc  (cinza)
+
+pediu para forçar as dependências para serem compatíveis com o React 19
+
+após isso cria a pasta lib dentro de frontend
+
+instala o componente do carousel
+npx shadcn@latest add carousel
+
+agora aparece a pasta ui, com os componentes criados
+
+
+Aula 68. Conteúdo do Markdown
+instala a dependência react-markdown
+npm i react-markdown rehype-raw remark-gfm
+
+Aula 76. Adicionar Popover
+npx shadcn@latest add popover
+
+Aula 77. Janela Chat #01
+instala a biblioteca de ícones (tabler icons react)
+npm i @tabler/icons-react
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

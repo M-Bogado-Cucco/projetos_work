@@ -1,0 +1,19 @@
+{
+  "name": "portfolio_agentes_ia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx concurrently \"cd api-portfolio && npm run start:dev\" \"cd frontend && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Bogado-Cucco/projetos_work.git"
+  },
+  "author": "bogado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Bogado-Cucco/projetos_work/issues"
+  },
+  "homepage": "https://github.com/M-Bogado-Cucco/projetos_work#readme",
+  "description": ""
+}
