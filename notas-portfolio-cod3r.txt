@@ -315,13 +315,31 @@ Aula 68. Conteúdo do Markdown
 instala a dependência react-markdown
 npm i react-markdown rehype-raw remark-gfm
 
+
+
 Aula 76. Adicionar Popover
 npx shadcn@latest add popover
+
+
 
 Aula 77. Janela Chat #01
 instala a biblioteca de ícones (tabler icons react)
 npm i @tabler/icons-react
 
+
+Aula 83. Correções no Build
+
+ver se a aplicação está compilando, antes de fazer o deploy. Deixar a aplicação rodando e 
+
+digitar no frontend
+npm run build
+
+
+Aula 84. Deploy #01
+Tem que logar na conta vercel
+
+
+Aula 85. Deploy #02
 
 
 
