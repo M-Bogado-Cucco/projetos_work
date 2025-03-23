@@ -6,6 +6,9 @@ https://github.com/portfolio-projetos-dev/portfoleo
 Aula 04 - Domínio e Repositório
 Normalmente compra um domínio na GoDaddy, na aula comprou um domínio por 17,34
 comprei o meu por 17,16 (1º ano), após 80,31
+
+domínio: api.projetos.work
+
 meu nome de usuario: bogado.dev
 
 
@@ -338,9 +341,20 @@ npm run build
 Aula 84. Deploy #01
 Tem que logar na conta vercel
 
+escolheu o pj do github
+clicou em edit > frontend  continue
+
+clicou no Environment variables  para preencher key e value
+
+key                       value  
+NEXT_PUBLIC_API_URL       api.projetos.work/
+
+CHAT_WEBHOOK             https://bogado.app.n8n.cloud/webhook/assistente-pessoal
+
+clicar em Deploy
 
 Aula 85. Deploy #02
-
+c
 
 
 
